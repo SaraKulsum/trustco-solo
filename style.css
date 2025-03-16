@@ -27,6 +27,7 @@
   --font-size-4xl: 2.25rem; /* 36px */
   --font-size-5xl: 4rem; /* 64px */
 }
+
 /* CSS Reset & Base Styles */
 * {
   box-sizing: border-box;
@@ -80,16 +81,53 @@ h6 {
   line-height: 1.4;
 }
 
-/* Paragraphs and lists */
-p,
-ul,
-ol {
-  margin-bottom: var(--spacing-md);
+/* Navigation */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-lg) var(--spacing-md);
+  background-color: var(--secondary-color);
 }
 
-ul,
-ol {
-  padding-left: var(--spacing-lg);
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 17px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: var(--text-color);
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 600;
+}
+
+.nav-links a:hover {
+  color: #0056b3;
+}
+
+li {
+  list-style-type: none;
+}
+
+.nav-links a.active {
+  color: var(--primary-color);
+}
+
+.auth-buttons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 /* Links */
@@ -99,51 +137,52 @@ a {
   transition: color 0.2s ease-in-out;
 }
 
-a:hover {
-  color: #0056b3;
-  text-decoration: underline;
-}
-
 /* Images */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* Container */
-.container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 var(--spacing-sm);
-}
-
 /* Buttons */
 .btn {
   padding: var(--spacing-sm) var(--spacing-md);
+  border-width: 1px;
   border-radius: 9999px;
   font-weight: 500;
   font-size: var(--font-size-sm);
-  transition: all 0.1s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .btn:hover {
-  transform: scale(1.05);
   cursor: pointer;
+  transform: scale(1.05);
 }
 
 .btn-light {
   color: var(--text-color);
   background: #fff;
+  border: solid #fff;
+  border-width: 1px;
 }
 
 .btn-primary {
   background-color: var(--primary-color);
+  border: solid var(--primary-color);
   color: white;
-  border: none;
+  border-width: 1px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.btn-light:hover {
+  color: #fff;
+  background: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: white;
+  color: var(--primary-color);
 }
 
 /* Hero Section */
@@ -159,6 +198,7 @@ img {
   margin: 0 auto;
   /* padding: 0 1.5rem; */
 }
+
 .hero h1 {
   font-size: 3.5rem;
   font-weight: 700;
