@@ -253,7 +253,7 @@ img {
 
 /*trusted brands*/
 .trusted-container {
-  padding: 3.125rem 9.375rem;
+  padding: 3.125rem 7.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -261,23 +261,25 @@ img {
 .trusted-container span {
   font-weight: 500;
 }
+
 .trusted-logo-container {
+  min-width: 72%;
   display: flex;
-  gap: 3rem;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
-/* Media Queries */
-@media (min-width: 1311px) {
+/** Media Queries **/
+
+/*  Desktop  */
+@media (min-width: 1060px) {
   .hero {
-    padding: 4rem 150px;
+    padding: 4rem 1.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
   }
-
   .hero h1 {
     font-size: 4rem;
     font-weight: 700;
@@ -287,7 +289,6 @@ img {
     font-size: var(--font-size-lg);
     font-weight: 500;
   }
-
   .hero-images {
     display: contents;
   }
@@ -307,8 +308,40 @@ img {
     max-height: 20rem;
   }
 }
+/* Large Desktop */
+@media (min-width: 1311px) {
+  .hero {
+    padding: 4rem 7.5rem;
+  }
+}
+/* Tablet & Mobile */
+@media (max-width: 1200px) {
+  .trusted-container {
+    padding: 3.125rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+  .trusted-container span {
+    font-weight: 500;
+  }
+  .trusted-logo {
+    width: auto;
 
-@media (max-width: 600px) {
+    height: 22px;
+  }
+  .trusted-logo-container {
+    min-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
   .hero h1 {
     font-size: 2rem;
   }
@@ -319,6 +352,29 @@ img {
 
   .hero-cta {
     flex-direction: column;
+    align-items: center;
+  }
+
+  .trusted-container {
+    padding: 3.125rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+  }
+  .trusted-container span {
+    font-weight: 500;
+  }
+  .trusted-logo {
+    width: auto;
+
+    height: 18px;
+  }
+  .trusted-logo-container {
+    min-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
     align-items: center;
   }
 }
