@@ -346,10 +346,6 @@ img {
     font-size: 2rem;
   }
 
-  .social-icons {
-    display: none;
-  }
-
   .hero-cta {
     flex-direction: column;
     align-items: center;
