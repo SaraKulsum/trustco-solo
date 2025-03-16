@@ -39,7 +39,6 @@ body {
   font-size: var(--font-size-base);
   line-height: 1.5;
   color: var(--text-color);
-  background-color: var(--secondary-color);
 }
 
 /* Typography */
@@ -149,6 +148,7 @@ img {
 
 /* Hero Section */
 .hero {
+  background-color: var(--secondary-color);
   padding: 4rem 1.5rem;
   text-align: center;
   overflow: hidden;
@@ -251,9 +251,27 @@ img {
   display: flex;
 }
 
+/*trusted brands*/
+.trusted-container {
+  padding: 3.125rem 9.375rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.trusted-container span {
+  font-weight: 500;
+}
+.trusted-logo-container {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Media Queries */
-@media (min-width: 1100px) {
+@media (min-width: 1311px) {
   .hero {
+    padding: 4rem 150px;
     display: flex;
     justify-content: center;
     align-items: center;
