@@ -631,6 +631,7 @@ img {
 .metric {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 4px;
 }
 .metric-value {
@@ -774,6 +775,27 @@ img {
   .building-bridges-content {
     padding-right: 0;
     gap: var(--spacing-lg);
+  }
+  /*number*/
+  .numbers {
+    padding: 4rem 1.5rem;
+  }
+  .numbers h2 {
+    font-size: var(--font-size-3xl);
+    line-height: normal;
+    text-align: center;
+  }
+
+  .metric-label {
+    font-size: var(--font-size-lg);
+  }
+  .metric-value {
+    font-size: 1.6rem;
+  }
+  .metrics-container {
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
   }
 }
 
@@ -925,7 +947,7 @@ img {
 
   /* benefits section */
   #benefits {
-    padding: 3.125rem 1.5rem 0 1.5rem;
+    padding: 3.125rem 1.5rem;
   }
   .benefits-cards {
     display: flex;
@@ -983,5 +1005,9 @@ img {
 
   .award-title {
     font-size: 0.7rem;
+  }
+  /*numbers*/
+  .metrics-container {
+    justify-content: space-between;
   }
 }
