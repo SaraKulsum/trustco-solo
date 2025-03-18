@@ -213,7 +213,7 @@ img {
 .hero p {
   font-size: var(--font-size-base);
   margin-bottom: 2rem;
-  color: var(--light-grey-color);
+  color: var(--grey-color);
   line-height: 1.6;
   max-width: 600px;
   font-weight: 500;
@@ -730,6 +730,7 @@ img {
   }
   .building-bridges-container {
     flex-direction: column-reverse;
+    align-items: flex-start;
   }
   .building-bridges-content h2 {
     font-size: var(--font-size-3xl);
@@ -812,8 +813,12 @@ img {
     gap: 1.5rem;
   }
   .benefits-header {
-    /* margin-bottom: 3rem; */
     max-width: 100%;
+  }
+
+  /*bridges section*/
+  .building-bridges-container {
+    gap: 1.5rem;
   }
 }
 
