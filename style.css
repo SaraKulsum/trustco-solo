@@ -433,7 +433,6 @@ img {
 /* Benefits Section */
 #benefits {
   padding: 4.5rem 7.5rem;
-  background-color: #f8f9fa;
 }
 
 .benefits-container {
@@ -515,6 +514,108 @@ img {
 .benefit-card p {
   color: #4a4a4a;
   line-height: 1.6;
+}
+
+/* Building Bridges Section */
+.building-bridges-container {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+/* Image container (left part) */
+.building-bridges-image {
+  flex: 1;
+  position: relative;
+  border-radius: 8px;
+}
+
+.connection-image {
+  width: calc(100% - 70px);
+}
+
+/* Award badge */
+.award-badge {
+  position: absolute;
+  bottom: 25%;
+  right: 0;
+  z-index: 99;
+
+  background-color: #003049;
+  border: solid white 4px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: white;
+  padding: 1rem 2.6rem;
+  box-shadow: 10px 13px 30px 0px #043a533d;
+}
+
+.award-badge-icon {
+  width: 45px;
+  height: auto;
+}
+
+.award-badge-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
+  text-align: center;
+}
+
+.award-number {
+  font-size: 1.2rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.award-title {
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: normal;
+}
+
+/* Content area (right part)*/
+.building-bridges-content {
+  flex: 1;
+  padding-right: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+}
+
+.building-bridges-content h2 {
+  font-weight: 700;
+  font-size: 3.7rem;
+  line-height: 4.3rem;
+  margin-bottom: 0;
+  letter-spacing: -0.02em;
+}
+
+.highlighted-text {
+  color: #92a7b0;
+}
+
+.building-bridges-content p {
+  font-size: var(--font-size-xl);
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+.reports-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: #003049;
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 2rem;
+  font-weight: 500;
+  text-decoration: none;
 }
 
 /* Normal Desktop  */
