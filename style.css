@@ -600,7 +600,8 @@ img {
   color: var(--text-color);
 }
 
-.reports-button {
+.reports-button,
+.founder-cta {
   display: inline-flex;
   align-items: center;
   gap: 0.75rem;
@@ -645,6 +646,85 @@ img {
   line-height: 32px;
   font-weight: 700;
 }
+
+/* meet founder section */
+.meet-founder {
+  padding: 4.5rem 0 4.5rem 7.5rem;
+  display: flex;
+  gap: 2rem;
+}
+.founder-content h2 {
+  margin-bottom: 0;
+  font-weight: 700;
+}
+.founder-content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  max-width: 500px;
+}
+.founder-content blockquote {
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  font-size: var(--font-size-2xl);
+  line-height: 32px;
+  letter-spacing: 0%;
+}
+
+.founder-name {
+  font-weight: 700;
+  font-size: var(--font-size-xl);
+}
+.founder-title {
+  color: var(--grey-color);
+  font-size: var(--font-size-base);
+}
+.founder-cta {
+  width: fit-content;
+}
+.icon-container {
+  background-color: #21516b;
+  border-radius: 50%;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Right container with images */
+.founder-images {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.main-founder-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.co-founder-image {
+  position: absolute;
+  left: 4rem;
+  bottom: 2rem;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+.decoration {
+  position: absolute;
+  right: 13%;
+  bottom: 15%;
+  z-index: 0;
+}
+
 /* Normal Desktop  */
 @media (min-width: 1060px) {
   .hero {
