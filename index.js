@@ -130,3 +130,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
 //display current year
 document.getElementById('current-year').textContent = new Date().getFullYear();
+
+//highlight the active nav-link
+const currentPath = window.location.pathname;
+navLinks.forEach((link) => {
+  const linkPath = link.getAttribute('href');
+  if (
+    linkPath === currentPath ||
+    (currentPath === '/' && linkPath === '/') ||
+    (linkPath !== '/' && currentPath.includes(linkPath))
+  ) {
+    link.classList.add('active');
+  }
+});
