@@ -661,7 +661,6 @@ img {
   font-weight: 400;
   font-size: var(--font-size-2xl);
   line-height: 32px;
-  letter-spacing: 0%;
 }
 
 .founder-name {
@@ -826,7 +825,6 @@ img {
   margin-bottom: 1.5rem;
   padding-left: 1.5rem;
   line-height: 32px;
-  letter-spacing: 0%;
 }
 
 /* Author info */
@@ -1213,7 +1211,9 @@ img {
   .blog-card-content {
     padding: 1.5rem;
   }
-
+  .blogs-header {
+    margin-bottom: 1.5rem;
+  }
   .blog-card-meta {
     margin-bottom: 1rem;
     font-size: var(--font-size-sm);
@@ -1498,7 +1498,7 @@ img {
   .see-all-sm-scrns {
     display: block;
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
   }
   /*blogs section*/
   .blogs-grid {
