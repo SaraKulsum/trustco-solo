@@ -1504,6 +1504,27 @@ textarea.form-control {
   .site-credits {
     padding: 1.5rem 1.5rem;
   }
+  .contact-options-section,
+  .form-section {
+    padding: 4rem 1.5rem;
+  }
+  .section-title {
+    font-size: var(--font-size-3xl);
+    line-height: normal;
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+
+  .section-subtitle {
+    font-size: var(--font-size-base);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    max-width: 600px;
+    font-weight: 500;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   /*Trusted section*/
   .trusted-container {
     padding: 3.125rem 1.5rem;
@@ -2024,5 +2045,12 @@ textarea.form-control {
   .legal-links ul {
     justify-content: center;
     gap: 1rem;
+  }
+  .contact-options {
+    flex-direction: column;
+    align-items: center;
+  }
+  .form-row {
+    flex-direction: column;
   }
 }
