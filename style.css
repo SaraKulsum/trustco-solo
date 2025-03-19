@@ -683,6 +683,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: fit-content;
 }
 
 /* Right container with images */
@@ -1003,6 +1004,9 @@ img {
 .see-all-sm-scrns {
   display: none;
 }
+
+/*cta-banner*/
+
 /* Normal Desktop  */
 @media (min-width: 1060px) {
   .hero {
@@ -1507,4 +1511,119 @@ img {
     grid-template-columns: 1fr;
     gap: 1rem;
   }
+}
+
+/* CTA Banner Styles */
+.cta-banner {
+  background-color: var(--text-color);
+  color: #ffffff;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.cta-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  min-height: 450px;
+  position: relative;
+}
+
+.cta-content {
+  flex: 1;
+  padding: 60px;
+  z-index: 2;
+}
+
+.cta-headline {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  max-width: 555px;
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background-color: #f5b844;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  margin-bottom: 15px;
+}
+.icon-container {
+  background-color: rgba(0, 0, 0, 0.445);
+}
+.arrow-icon {
+  margin-left: 10px;
+  transform: rotate(90deg);
+}
+
+.cta-note {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin: 0;
+}
+
+/* Image container and layers */
+.cta-image-container {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.cta-person-image {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: auto;
+  width: 100%;
+
+  background-size: cover;
+  background-position: center;
+  z-index: 2;
+}
+
+.cta-icon {
+  position: absolute;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.crown-icon {
+  left: 0;
+  bottom: 0;
+  width: 60px;
+  height: 60px;
+  z-index: 1;
+}
+
+.star-icon {
+  right: 15%;
+  bottom: 0;
+  width: 22%;
+  height: auto;
+  border-radius: 0;
+}
+
+.search-icon {
+  left: 82%;
+  bottom: 0;
+  width: 22%;
+  height: auto;
+  z-index: 1;
 }
