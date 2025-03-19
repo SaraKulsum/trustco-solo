@@ -1120,6 +1120,78 @@ img {
   z-index: 1;
 }
 
+/* Footer */
+#footer {
+  padding: 3.125rem 7.5rem;
+
+  bottom: 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.footer-logo img {
+  height: 32px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.footer-social a {
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-social a:hover {
+  transform: scale(1.1);
+}
+
+.footer-description {
+  color: var(--grey-color);
+  max-width: 400px;
+  font-size: var(--font-size-lg);
+}
+
+.footer-nav h3 {
+  color: var(--text-color);
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.footer-nav ul {
+  list-style: none;
+}
+
+.footer-nav ul li {
+  margin-bottom: 0.8rem;
+}
+
+.footer-nav ul li a {
+  color: var(--grey-color);
+  font-size: var(--font-size-lg);
+  line-height: 28px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-nav ul li a:hover {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
 /* Normal Desktop  */
 @media (min-width: 1060px) {
   .hero {
