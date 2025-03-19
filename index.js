@@ -127,3 +127,6 @@ document.addEventListener('DOMContentLoaded', function () {
   // Update on window resize
   window.addEventListener('resize', updateCarousel);
 });
+
+//display current year
+document.getElementById('current-year').textContent = new Date().getFullYear();
