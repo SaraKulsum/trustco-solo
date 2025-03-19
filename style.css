@@ -1135,7 +1135,6 @@ img {
 .footer-logo {
   display: flex;
   align-items: center;
-  margin-bottom: 1rem;
 }
 
 .footer-logo img {
@@ -1161,7 +1160,11 @@ img {
   max-width: 400px;
   font-size: var(--font-size-lg);
 }
-
+.footer-nav-container {
+  display: flex;
+  min-width: 20%;
+  gap: 4rem;
+}
 .footer-nav h3 {
   color: var(--text-color);
   font-weight: 700;
@@ -1251,7 +1254,8 @@ img {
   #blogs,
   .numbers,
   .building-bridges,
-  #benefits {
+  #benefits,
+  #footer {
     padding: 4rem 1.5rem;
   }
   /*Trusted section*/
@@ -1437,6 +1441,26 @@ img {
     margin: 30px 0;
     max-width: 80%;
   }
+  .footer-description {
+    max-width: 300px;
+    font-size: var(--font-size-base);
+  }
+
+  .footer-nav h3 {
+    color: var(--text-color);
+    font-weight: 700;
+    font-size: var(--font-size-lg);
+  }
+
+  .footer-nav ul li {
+    margin-bottom: 0.8rem;
+  }
+
+  .footer-nav ul li a {
+    font-size: var(--font-size-base);
+    line-height: 24px;
+    font-weight: 500;
+  }
 }
 
 /* Tablet & Mobile 2 */
@@ -1530,6 +1554,19 @@ img {
   }
   .blogs-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+  }
+  .footer-description {
+    max-width: 80%;
+  }
+
+  .footer-social {
+    justify-content: center;
   }
 }
 
@@ -1723,5 +1760,11 @@ img {
     width: 100%;
     max-width: 400px;
     height: 18rem;
+  }
+  .footer-description {
+    max-width: 100%;
+  }
+  .footer-nav-container {
+    gap: 4rem;
   }
 }
