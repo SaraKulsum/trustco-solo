@@ -661,7 +661,6 @@ img {
   font-weight: 400;
   font-size: var(--font-size-2xl);
   line-height: 32px;
-  letter-spacing: 0%;
 }
 
 .founder-name {
@@ -739,7 +738,8 @@ img {
 }
 
 .testimonials-header a,
-.blogs-header .see-all {
+.blogs-header .see-all,
+.see-all-sm-scrns {
   display: flex;
   align-items: center;
   color: var(--text-color);
@@ -825,7 +825,6 @@ img {
   margin-bottom: 1.5rem;
   padding-left: 1.5rem;
   line-height: 32px;
-  letter-spacing: 0%;
 }
 
 /* Author info */
@@ -999,7 +998,9 @@ img {
 .blog-card-link:hover img {
   transform: translateX(3px);
 }
-
+.see-all-sm-scrns {
+  display: none;
+}
 /* Normal Desktop  */
 @media (min-width: 1060px) {
   .hero {
@@ -1054,6 +1055,15 @@ img {
 
 /* Tablet & Mobile */
 @media (max-width: 1200px) {
+  /*CONTAINERS PADDING*/
+  .testimonials,
+  #blogs,
+  .numbers,
+  .building-bridges,
+  #benefits {
+    padding: 4rem 1.5rem;
+  }
+  /*Trusted section*/
   .trusted-container {
     padding: 3.125rem 1.5rem;
     display: flex;
@@ -1083,9 +1093,7 @@ img {
     font-size: var(--font-size-3xl);
     line-height: normal;
   }
-  #benefits {
-    padding: 4rem 1.5rem;
-  }
+
   .benefits-header {
     max-width: 300px;
   }
@@ -1114,9 +1122,7 @@ img {
   }
 
   /*bridges section*/
-  .building-bridges {
-    padding: 4rem 1.5rem;
-  }
+
   .building-bridges-container {
     flex-direction: column-reverse;
     align-items: flex-start;
@@ -1132,10 +1138,9 @@ img {
     padding-right: 0;
     gap: var(--spacing-lg);
   }
+
   /*number*/
-  .numbers {
-    padding: 4rem 1.5rem;
-  }
+
   .numbers h2 {
     font-size: var(--font-size-3xl);
     line-height: normal;
@@ -1193,9 +1198,46 @@ img {
     color: var(--grey-color);
     font-size: var(--font-size-sm);
   }
+  .testimonials-header h2,
+  .blogs-header h2 {
+    font-weight: 700;
+    font-size: var(--font-size-3xl);
+    line-height: 38px;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: capitalize;
+  }
+  /*blogs*/
+  .blog-card-content {
+    padding: 1.5rem;
+  }
+  .blogs-header {
+    margin-bottom: 1.5rem;
+  }
+  .blog-card-meta {
+    margin-bottom: 1rem;
+    font-size: var(--font-size-sm);
+  }
+  .blog-date,
+  .blog-author {
+    line-height: 18px;
+  }
 
-  .testimonials {
-    padding: 4rem 1.5rem;
+  .blog-card-title {
+    font-size: var(--font-size-lg);
+    margin-bottom: 0.5rem;
+    line-height: 28px;
+  }
+
+  .blog-card-excerpt {
+    margin-bottom: 1rem;
+    color: var(--grey-color);
+    flex-grow: 1;
+  }
+
+  .blog-card-link {
+    gap: 0.5rem;
+    font-size: var(--font-size-sm);
   }
 }
 
@@ -1287,6 +1329,9 @@ img {
   }
   .founder-images {
     max-width: 100%;
+  }
+  .blogs-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -1445,14 +1490,19 @@ img {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    margin-bottom: 0.8rem;
+    margin-bottom: 1rem;
   }
-  .testimonials-header h2 {
-    font-weight: 700;
-    font-size: var(--font-size-3xl);
-    line-height: 38px;
-    letter-spacing: 0%;
+  .blogs-header .see-all {
+    display: none;
+  }
+  .see-all-sm-scrns {
+    display: block;
     text-align: center;
-    text-transform: capitalize;
+    margin-top: 1.5rem;
+  }
+  /*blogs section*/
+  .blogs-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
   }
 }
